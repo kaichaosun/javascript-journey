@@ -20,12 +20,15 @@ const s3 = new S3Client({
 
   const params = {
     Bucket: "flux",
-    Key: "meta-QmdnCfzXpQi1jDe5hQvguTfUwB5HmzELRBhqQQDTYLqeXE"
+    Key: "QmUASrKutAt5ckmkgDxK4657gdTfaKKYzK9ZQ1MbrcWZqF"
   };
 
+  console.log("start")
+
+  let start = new Date().getTime()
   const result = await s3.send(new GetObjectCommand(params));
-  console.log("hehe")
 
   const contents = await streamToString(result.Body);
-  console.log(contents)
+  let end = new Date().getTime()
+  console.log(end - start);
 })();
