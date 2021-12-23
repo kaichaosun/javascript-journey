@@ -14,6 +14,10 @@ async function streamToString(stream) {
 const s3 = new S3Client({
     region: "decentralized",
     endpoint,
+    credentials: {
+      accessKeyId: "test key id",
+      secretAccessKey: "test secret key",
+  },
 });
 
 (async () => {
