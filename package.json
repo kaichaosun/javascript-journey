@@ -1,5 +1,5 @@
 {
-  "name": "storj-demo",
+  "name": "javascript-journey",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.44.0"
+    "@aws-sdk/client-s3": "^3.44.0",
+    "ajv": "^8.8.2"
   }
 }
